@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Погода</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="page">
+        <form class="form" id="form">
+            <label class="field">
+                <span>Широта</span>
+                <input name="lat" inputmode="decimal" autocomplete="off">
+            </label>
+            <label class="field">
+                <span>Долгота</span>
+                <input name="lon" inputmode="decimal" autocomplete="off">
+            </label>
+            <p class="error" id="error"></p>
+            <button type="submit">Показать погоду</button>
+        </form>
+        <section class="list" id="list"></section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
