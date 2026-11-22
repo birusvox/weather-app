@@ -38,14 +38,14 @@ export function weatherName(code) {
 
 export function icon(type) {
     const shapes = {
-        sun: `<circle cx="32" cy="32" r="12" fill="#f5c518"/>`,
-        moon: `<path d="M36 14a16 16 0 1 0 14 24 13 13 0 0 1-14-24z" fill="#f4e7b0"/>`,
-        cloud: `<ellipse cx="32" cy="36" rx="16" ry="10" fill="#c5d0dc"/>`,
-        fog: `<ellipse cx="32" cy="30" rx="16" ry="8" fill="#d5dbe3"/><path d="M16 44h32M18 50h28" stroke="#9aa6b2" stroke-width="3"/>`,
-        rain: `<ellipse cx="32" cy="28" rx="16" ry="9" fill="#8ea0b5"/><path d="M24 42l-3 8M32 42l-3 8M40 42l-3 8" stroke="#3b6fe0" stroke-width="3"/>`,
-        snow: `<ellipse cx="32" cy="28" rx="16" ry="9" fill="#d5e2ee"/><path d="M24 44h4M32 42v6M40 44h4" stroke="#7f93a8" stroke-width="3"/>`,
-        storm: `<ellipse cx="32" cy="26" rx="16" ry="9" fill="#6d7c8f"/><path d="M34 34l-8 12h8l-4 10 12-14h-8z" fill="#f5c518"/>`
+        sun: `<circle cx="32" cy="32" r="10" fill="#f5b400"/><path d="M32 8v8M32 48v8M8 32h8M48 32h8M14 14l6 6M44 44l6 6M50 14l-6 6M20 44l-6 6" stroke="#f5b400" stroke-width="4" stroke-linecap="round"/>`,
+        moon: `<path d="M38 12a18 18 0 1 0 16 28 14 14 0 0 1-16-28z" fill="#f0d78c"/>`,
+        cloud: `<ellipse cx="26" cy="36" rx="12" ry="9" fill="#8ea0b3"/><ellipse cx="40" cy="34" rx="12" ry="10" fill="#6f8499"/>`,
+        fog: `<ellipse cx="32" cy="26" rx="16" ry="8" fill="#8ea0b3"/><path d="M14 42h36M16 50h32" stroke="#5d6d7e" stroke-width="4" stroke-linecap="round"/>`,
+        rain: `<ellipse cx="32" cy="24" rx="16" ry="9" fill="#5d6f84"/><path d="M22 40l-4 12M32 40l-4 12M42 40l-4 12" stroke="#2f6fe0" stroke-width="4" stroke-linecap="round"/>`,
+        snow: `<ellipse cx="32" cy="24" rx="16" ry="9" fill="#6f8499"/><path d="M20 46h8M32 40v12M44 46h-8M26 43l12 6M38 43l-12 6" stroke="#2c3d4f" stroke-width="3" stroke-linecap="round"/>`,
+        storm: `<ellipse cx="32" cy="22" rx="16" ry="9" fill="#4e5d6e"/><path d="M36 30l-10 14h8l-4 12 14-16h-8z" fill="#f5b400"/>`
     };
 
-    return `<svg viewBox="0 0 64 64" aria-hidden="true">${shapes[type]}</svg>`;
+    return `<svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true">${shapes[type]}</svg>`;
 }
